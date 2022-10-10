@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="760.0" prefHeight="597.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="67.0000991821289" fitWidth="67.0000991821289" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../SistemaRexImagenes/Negro%20y%20Blanco%20Enmarcado%20DJ%20Kessey%20Logo.png" />
+      </image>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#618cd9cf" height="70.00009155273438" layoutX="70.0" layoutY="12.0" stroke="#8ba7d9" strokeType="INSIDE" width="1116.0" />
+    <Label layoutX="82.0" layoutY="33.0" prefHeight="24.521484375" prefWidth="237.0" text="Aguillon &amp; Asociados" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic Cursiva" size="20.0" />
+      </font>
+    </Label>
+    <BorderPane layoutX="13.0" layoutY="95.0" prefHeight="488.0" prefWidth="1172.0">
+      <left>
+        <VBox alignment="TOP_LEFT" prefHeight="425.0" prefWidth="130.0" style="-fx-background-color: #404040;&#10;&#10;&#10;">
+          <children>
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="" mnemonicParsing="false" onMouseClicked="#home" prefHeight="59.0" prefWidth="130.0" style="-fx-background-color: #404040;&#10;-fx-border-width: 0px 0px 2px 0px;&#10;-fx-border-color: white;&#10;&#10;&#10;&#10;&#10;" text="Inicio" textAlignment="LEFT" textFill="WHITE">
+              <font>
+                <Font name="Century Gothic" size="15.0" fx:id="x1" />
+              </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" font="$x1" mnemonicParsing="false" onMouseClicked="#page1" prefHeight="59.0" prefWidth="130.0" style="-fx-background-color: #404040;&#10;-fx-border-width: 0px 0px 2px 0px;&#10;-fx-border-color: white;&#10;&#10;" text="Clientes" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+            <Button font="$x1" mnemonicParsing="false" onMouseClicked="#page2" prefHeight="59.0" prefWidth="130.0" style="-fx-background-color: #404040;&#10;-fx-border-width: 0px 0px 2px 0px;&#10;-fx-border-color: white;" text="Expedientes" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+            <Button font="$x1" mnemonicParsing="false" prefHeight="59.0" prefWidth="144.0" style="-fx-background-color: gray;&#10;-fx-border-width: 0px 0px 2px 0px;&#10;-fx-border-color: white;&#10;" text="Eventos" textFill="WHITE" />
+            <Button font="$x1" mnemonicParsing="false" onMouseClicked="#page4" prefHeight="60.0" prefWidth="130.0" style="-fx-background-color: #404040;&#10;-fx-border-width: 0px 0px 2px 0px;&#10;-fx-border-color: white;&#10;&#10;&#10;" text="Button" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+          </children>
+        </VBox>
+      </left>
+      <right>
+        <Pane prefHeight="488.0" prefWidth="1042.0001220703125" />
+      </right>
+    </BorderPane>
+  </children>
+</AnchorPane>
